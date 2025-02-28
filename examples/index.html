@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test The Widget - nocodecreative.io</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/geist-font/1.0.0/fonts/geist-sans/style.min.css">
+
+    <!-- Widget Configuration -->
+    <script>
+        window.ChatWidgetConfig = {
+            webhook: {
+                url: 'https://agent.byteworkconsulting.com/webhook/32114993-5053-4e19-aef7-13511f6b5369/chat',
+                route: 'general'
+            },
+            branding: {
+                logo: 'https://i.postimg.cc/5ydzCyS0/chat.png',
+                name: 'Vintageshop',
+                welcomeText: 'Hi, how can we help?',
+                subheaderText: 'You can ask me anything',
+                initialWelcomeMessage: 'Hello! Welcome to Vintageshop. How can I assist you today?'
+            },
+            ui: {
+                quickReplies: [
+                    { text: 'Special Offers', action: 'special' },
+                    { text: 'Summer Outfits', action: 'summer' },
+                    { text: 'Buy a Gifcard', action: 'giftcard' },
+                    { text: 'New Collection', action: 'new' }
+                ]
+            },
+            style: {
+                primaryColor: '#854fff',
+                secondaryColor: '#6b3fd4',
+                position: 'right',
+                backgroundColor: '#ffffff', //Background color of the chat widget
+                fontColor: '#333333', //Text color for messages and interface
+                lightBgColor: '#f5f5f7'
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Chat Widget Test Page</h1>
+    <p>Click on the chat button in the bottom right corner to test the widget.</p>
+
+    <!-- Widget Script -->
+    <script src="chat-widget.js"></script>
+</body>
+</html>
